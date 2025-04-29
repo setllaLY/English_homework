@@ -9,39 +9,48 @@
             font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f9f9f9;
+            background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
         }
         .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
         }
         header {
-            background: #007BFF;
+            background: #333;
             color: #fff;
-            padding: 20px 0;
+            padding: 10px 0;
             text-align: center;
+            border-bottom: 3px solid #555;
         }
         header h1 {
             margin: 0;
-            font-size: 2.5em;
+            font-size: 2em;
         }
-        nav {
-            display: flex;
-            justify-content: center;
+        header nav {
             margin-top: 10px;
         }
-        nav a {
+        header nav ul {
+            padding: 0;
+            list-style: none;
+        }
+        header nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        header nav ul li a {
             color: #fff;
             text-decoration: none;
-            padding: 10px 15px;
             font-size: 1.2em;
+            text-transform: uppercase;
+            padding: 5px 10px;
             transition: background-color 0.3s;
         }
-        nav a:hover, nav a.current {
-            background-color: #0056b3;
+        header nav ul li a:hover, header nav ul li a.current {
+            background-color: #555;
+            border-radius: 5px;
         }
         .content {
             background: #fff;
@@ -52,12 +61,11 @@
         }
         .content h2 {
             color: #007BFF;
-            font-size: 2em;
+            font-size: 1.8em;
             margin-bottom: 10px;
         }
         .content img {
-            width: 100%;
-            max-width: 300px;
+            max-width: 100%;
             height: auto;
             border-radius: 50%;
             margin: 20px 0;
@@ -81,9 +89,11 @@
         <div class="container">
             <h1>Yun Liu</h1>
             <nav>
-                <a href="#view" class="current">View</a>
-                <a href="#projects">Projects</a>
-                <a href="#contact">Contact</a>
+                <ul>
+                    <li><a href="#view" class="current">View</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
             </nav>
         </div>
     </header>
@@ -106,8 +116,5 @@
         </div>
     </div>
 
-    <footer>
-        <p>&copy; 2025 Yun Liu</p>
-    </footer>
 </body>
 </html>
